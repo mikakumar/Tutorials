@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'exapp';
+  counter: number = 0;
+
+  countUp(){
+    this.counter++;
+  }
+  countDown(){
+    if(this.counter == 0)
+    this.counter = 0;
+    else 
+    this.counter--;
+  }
 }
