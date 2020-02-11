@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-counter-app',
+  selector: 'counter-app',
   templateUrl: './counter-app.component.html',
   styleUrls: ['./counter-app.component.css']
 })
