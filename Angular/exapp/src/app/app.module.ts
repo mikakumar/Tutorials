@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CounterAppComponent } from './components/counter-app/counter-app.component';
+import { PictureComponent } from './components/picture/picture.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CounterAppComponent
+    CounterAppComponent,
+    PictureComponent
   ],
   imports: [
     BrowserModule,
