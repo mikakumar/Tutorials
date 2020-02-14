@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>You'll float too~</title>
+	<link rel="stylesheet" href="floatingform.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<!--Encapsulate full form in this-->
+		<!--establish a width of 80%, from full screen and padd the rest-->
+		<h2>Contact Us</h2>
+		<div class="row100">
+			<!--Divide elements by row-->
+			<div class="col">
+			<!--Divide elements by col-->
+				<div class="inputBox">
+			<!--The color only affects the 'text' class, inputBox defines the section for each input-->
+					<input type="text" required="required" name="firstname">
+					<span class="text">First Name</span>
+					<span class="line"></span>
+				</div>
+			</div>
+			<div class="col">
+			<!--Divide elements by col-->
+					<div class="inputBox">
+						<!--The color only affects the 'text' class, inputBox defines the section for each input-->
+					<input type="text" required="required" name="lastname">
+					<span class="text">Last Name</span>
+					<span class="line"></span>
+				</div>
+			</div>
+		</div>
+		<div class="row100">
+			<!--Divide elements by row-->
+			<div class="col">
+			<!--Divide elements by col-->
+				<div class="inputBox">
+			<!--The color only affects the 'text' class, inputBox defines the section for each input-->
+					<input type="text" required="required" name="email">
+					<span class="text">Email</span>
+					<span class="line"></span>
+				</div>
+			</div>
+			<div class="col">
+			<!--Divide elements by col-->
+				<div class="inputBox">
+			<!--The color only affects the 'text' class, inputBox defines the section for each input-->
+					<input type="text" name="mobile" required="required">
+					<span class="text">Mobile</span>
+					<span class="line"></span>
+				</div>
+			</div>
+		</div>
+		<div class="row100">
+			<!--Divide elements by row-->
+			<div class="col">
+			<!--Divide elements by col-->
+				<div class="inputBox textarea">
+			<!--The color only affects the 'text' class, inputBox defines the section for each input-->
+			<!--textarea has to be defined seperately, with focus+ and valid+ seperate-->
+					<textarea name="textarea" required="required"></textarea>
+					<span class="text">Please enter your message here.</span>
+					<span class="line"></span>
+				</div>
+			</div>
+		</div>
+		<div class="row100">
+			<!--Divide elements by row-->
+			<div class="col">
+			<!--Divide elements by col-->
+				<input type="submit" value="send">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
