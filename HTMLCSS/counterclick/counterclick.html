@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Counter!</title>
+	<link rel="stylesheet" href="counterclick.css">
+	<link href="https://fonts.googleapis.com/css?family=Princess+Sofia&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<!--container to hold items-->
+		<span class="prev" onclick="prevNum()"></span>
+		<span class="next" onclick="nextNum()"></span>
+		<!--box to hold 'new' span containing array of numbers-->
+		<div id="box"></div>
+	</div>
+</body>
+
+<!--num gets box element-->
+<!--in for, new span contains each i and then is added to the box element-->
+
+<!-- counter cycles numbers by taking number length, sets the prev number to none display and the next number to initial display -->
+<!--initial state is 0 and initial state is replaced by the number being cycled into initial state-->
+
+<script type="text/javascript">
+	var num = document.getElementById('box');
+	for(i=0;i<100;i++)
+	{
+		var span = document.createElement('span');
+		span.textContent = i;
+		num.appendChild(span);
+
+	}
+
+	var numbers = num.getElementsByTagName('span');
+	var index = 0;
+
+	function nextNum() {
+		numbers[index].style.display = 'none';
+		index = (index+1)%numbers.length;
+		numbers[index].style.display = 'initial';
+	}
+
+	function prevNum() {
+			numbers[index].style.display = 'none';
+			index = (index-1 + numbers.length)%numbers.length;
+			numbers[index].style.display = 'initial';
+		}
+</script>
+</html>

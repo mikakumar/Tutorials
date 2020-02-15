@@ -1,0 +1,42 @@
+body{
+	min-height: 100vh;
+	align-content: center;
+	margin: 0;
+	padding: 0;
+	background: pink;
+	display: flex;
+	justify-content: center;
+}
+
+.container{
+	position: relative;
+	color: white;
+}
+
+.container h2{
+	position: absolute;
+	font-size: 8em;
+	top: 30%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+}
+
+.container h2:nth-child(1){
+	color: white;
+	-webkit-text-stroke: 5px white;
+}
+
+.container h2:nth-child(2)
+{
+	color: pink;
+	animation: water 4s infinite ease-in-out;
+}
+
+@keyframes water{
+	0%, 100%{
+		clip-path: polygon(1% 64%, 19% 59%, 36% 59%, 54% 63%, 68% 69%, 80% 64%, 100% 59%, 100% 100%, 0% 100%);
+	}
+	50%{
+		clip-path: polygon(0 41%, 22% 36%, 43% 42%, 59% 48%, 74% 41%, 88% 38%, 100% 42%, 100% 100%, 0% 100%);
+	}
+}
