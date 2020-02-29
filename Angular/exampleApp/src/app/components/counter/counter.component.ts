@@ -9,7 +9,21 @@ export class CounterComponent implements OnInit {
 
   constructor() { }
 
+  counter: number;
+
   ngOnInit() {
+    this.counter = 0;
+  }
+
+  countUp = () =>{
+    this.counter++;
+  }
+
+  countDown = () =>{
+    if(this.counter == 0)
+    this.counter = 0;
+    else 
+    this.counter--;
   }
 
 }
