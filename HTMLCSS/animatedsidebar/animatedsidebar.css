@@ -1,0 +1,45 @@
+:root {
+    font-size: 16px;
+    font-family: 'Oxanium', cursive;
+    --nav-primary: #280E1D;
+    --nav-secondary: #E0D5DC;
+    --scroll-primary: #150A1A;
+    --scroll-secondary: #723025;
+}
+
+body {
+    color: black;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #49006b;
+
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #da3c22;
+}
+
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background: #280E1D;
+}
+
+.nav-link{
+    background: #E0D5DC;
+}

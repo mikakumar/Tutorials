@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #E8E8F3;
+}
+
+.container .circle {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  background: #E8E8F3;
+  float: left;
+  border: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.container .circle::before{
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: #E8E8F3;
+  box-shadow: 0px -4px 10px rgba(255, 255, 255, 0.2), 0px 4px 6px #e8e8f3, inset 0px -4px 12px rgba(255, 255, 255, 0.6), inset 0px -2px 2px rgba(255, 255, 255, 0.2), inset 0px 4px 6px #c6c6e2;
+  border-radius: 50%;
+  transition: 2s ease-in-out;
+}
+
+.container .circle:hover::before{
+  transition: 0s ease-in-out;
+}
+
+.container .circle:nth-child(19n+1):hover::before{
+  background: #55efc4;
+  box-shadow: 0 0 3px #55efc4;
+}
+
+.container .circle:nth-child(19n+2):hover::before{
+  background: #81ecec;
+  box-shadow: 0 0 3px #81ecec;
+}
+
+.container .circle:nth-child(19n+3):hover::before{
+  background: #74b9ff;
+  box-shadow: 0 0 3px #74b9ff;
+}
+
+.container .circle:nth-child(19n+4):hover::before{
+  background: #a29bfe;
+  box-shadow: 0 0 3px #a29bfe;
+}
+
+.container .circle:nth-child(19n+5):hover::before{
+  background: #b2bec3;
+  box-shadow: 0 0 3px #b2bec3;
+}
+
+.container .circle:nth-child(19n+6):hover::before{
+  background: #6c5ce7;
+  box-shadow: 0 0 3px #6c5ce7;
+}
+
+.container .circle:nth-child(19n+7):hover::before{
+  background: #0984e3;
+  box-shadow: 0 0 3px #0984e3;
+}
+
+.container .circle:nth-child(19n+8):hover::before{
+  background: #00cec9;
+  box-shadow: 0 0 3px #00cec9;
+}
+
+.container .circle:nth-child(19n+9):hover::before{
+  background: #00b894;
+  box-shadow: 0 0 3px #00b894;
+}
+
+.container .circle:nth-child(19n+10):hover::before{
+  background: #636e72;
+  box-shadow: 0 0 3px #636e72;
+}
+
+.container .circle:nth-child(19n+11):hover::before{
+  background: #fd79a8;
+  box-shadow: 0 0 3px #fd79a8;
+}
+
+.container .circle:nth-child(19n+12):hover::before{
+  background: #ff7675;
+  box-shadow: 0 0 3px #ff7675;
+}
+
+.container .circle:nth-child(19n+13):hover::before{
+  background: #fab1a0;
+  box-shadow: 0 0 3px #fab1a0;
+}
+
+.container .circle:nth-child(19n+14):hover::before{
+  background: #ffeaa7;
+  box-shadow: 0 0 3px #ffeaa7;
+}
+
+.container .circle:nth-child(19n+15):hover::before{
+  background: #fdcb6e;
+  box-shadow: 0 0 3px #fdcb6e;
+}
+
+.container .circle:nth-child(19n+16):hover::before{
+  background: #e17055;
+  box-shadow: 0 0 3px #e17055;
+}
+.container .circle:nth-child(19n+17):hover::before{
+  background: #d63031;
+  box-shadow: 0 0 3px #d63031;
+}
+
+.container .circle:nth-child(19n+18):hover::before{
+  background: #e84393;
+  box-shadow: 0 0 3px #e84393;
+}
+
+.container .circle:nth-child(19n+19):hover::before{
+  background: #2d3436;
+  box-shadow: 0 0 3px #2d3436;
+}
