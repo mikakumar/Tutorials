@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="signinup.css">
+
+    <script type="text/javascript" src="signinup.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+<div class="page">
+
+  <div class="panel">
+    <div class="panel__visible">
+      <div class="panel__content">
+        <h1 class="panel__title">  Sign Up </h1>
+        <form class="form">
+          <label class="form__label" for="fullname">Full Name</label>
+          <input class="form__input" type="text" id="fullname" name="fullname">
+
+          <label class="form__label" for="username">Username</label>
+          <input class="form__input" type="text" id="username" name="username">
+          <label class="form__label" for="password">Password</label>
+          <input class="form__input " type="password" id="password" name="password">
+          <button class="form__btn" type="button" value="Submit">Submit</button>
+
+          <button class="form__toggle js-formToggle" type="button">Or, Sign In</button>
+        </form>
+      </div>
+      <div class="panel__content panel__content--overlay js-panel__content ">
+        <h1 class="panel__title">  Sign In </h1>
+        <form class="form">
+          <label class="form__label" for="usernameIn">Username</label>
+          <input class="form__input" type="text" id="usernameIn" name="usernameIn">
+
+
+          <label class="form__label" for="passwordIn">Password</label>
+          <input class="form__input " type="password" id="passwordIn" name="passwordIn">
+          <button class="form__btn" type="button" value="Submit">Sign In</button>
+          <br>
+          <button class="form__toggle js-formToggle" type="button">Or, Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <div class="panel__back js-imageAnimate">
+      <img class="panel__img" src="https://images.unsplash.com/photo-1580111161432-64ca21daa33d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max" />
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript" src="signinup.js"></script>
+</body>
+</html>

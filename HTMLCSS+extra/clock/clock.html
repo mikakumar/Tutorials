@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <div>
+  <div class="time">19:02:33</div>
+  <svg id="menu" viewBox='0 0 100 100'>
+    <defs>
+    <filter id="blur" x="-10" y="-10" width="120" height="120">
+      <feGaussianBlur in="SourceGraphic" stdDeviation=".4" />
+    </filter>
+    <filter id="blur2" x="-10" y="-10" width="120" height="120">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+    </filter>
+    </defs>
+    <circle class="grey" cx="50" cy="50" r="40" pathlength="12" ></circle>
+    <circle class="grey" cx="50" cy="50" r="31" pathlength="60" ></circle>
+    <circle class="grey" cx="50" cy="50" r="22" pathlength="60" ></circle>
+    <g filter="url(#blur2)">
+    <circle class="hour" cx="50" cy="50" r="40" pathlength="12" ></circle>
+    <circle class="min" cx="50" cy="50" r="31" pathlength="60" ></circle>
+    <circle class="sec" cx="50" cy="50" r="22" pathlength="60" ></circle>
+    </g>
+   </svg>
+ </div>
+
+
+<script type="text/javascript" src="clock.js"></script>
+</body>
+</html>

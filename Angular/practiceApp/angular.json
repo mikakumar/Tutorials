@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "exampleApp": {
+    "practiceApp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/exampleApp",
+            "outputPath": "dist/practiceApp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -63,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "exampleApp:build"
+            "browserTarget": "practiceApp:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "exampleApp:build:production"
+              "browserTarget": "practiceApp:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "exampleApp:build"
+            "browserTarget": "practiceApp:build"
           }
         },
         "test": {
@@ -111,15 +112,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "exampleApp:serve"
+            "devServerTarget": "practiceApp:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "exampleApp:serve:production"
+              "devServerTarget": "practiceApp:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "exampleApp"
+  "defaultProject": "practiceApp"
 }
