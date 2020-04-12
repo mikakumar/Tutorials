@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="box.css">
+    <script type="text/javascript" src="box.js"></script>
+</head>
+<body>
+    // create angular app
+	var validationApp = angular.module('validationApp', []);
+
+	// create angular controller
+	validationApp.controller('mainController', function($scope) {
+
+		// function to submit the form after all validation has occurred
+		$scope.submitForm = function() {
+
+			// check to make sure the form is completely valid
+			if ($scope.userForm.$valid) {
+				alert('our form is amazing');
+			}
+
+		};
+
+	});
+</body>
+</html>

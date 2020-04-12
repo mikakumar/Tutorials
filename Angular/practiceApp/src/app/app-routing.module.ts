@@ -2,7 +2,16 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
-const routes: Routes = [];
+import { ProductListComponent } from './components/shopApp/product-list/product-list.component';
+import { ProductDetailsComponent } from './components/shopApp/product-details/product-details.component';
+import { CartComponent } from './components/shopApp/cart/cart.component';
+
+
+const routes: Routes = [
+	{path: '', component: ProductListComponent },
+	{path: 'products/:productId', component: ProductDetailsComponent},
+	{path: 'cart', component: CartComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
