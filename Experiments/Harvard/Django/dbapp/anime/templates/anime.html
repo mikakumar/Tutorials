@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %}Anime list!{% endblock %}
+
+{% block heading %}Anime list!{% endblock %}
+
+{% block body%}
+	<ol>
+	{% for anime in animee %}
+		<a href="{% url 'anime' anime.id%}"><li>{{anime.name}}</li></a>
+	{% endfor %}
+	</ol>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title %}Detail{% endblock %}
+
+{% block heading %}Detail{% endblock %}
+
+{% block body%}
+
+
+	<div class="name">
+		<p>Name: {{anime.name}}</p>
+		<p>Genre: {{anime.genre}}</p>
+		<p>Episode: {{anime.episode}}</p>
+		<p>Seasons: {{anime.seasons}}</p>
+		<p>Adult?: {{anime.isadult}}</p>
+	</div>
+	<br>
+	<a href="{% url 'index' %}">Back to full listing</a>
+
+{% endblock %}
