@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}Page One{% endblock %}
+
+{% block body %}
+
+{% for i in lim %}
+{{i}}
+{% endfor %}
+
+<a href="{{url_for('more')}}">More</a>
+{% endblock %}
